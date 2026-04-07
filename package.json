@@ -5,10 +5,13 @@
     "fmt": "oxfmt",
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:api": "turbo run dev --filter @cfblog/api",
+    "dev:admin": "turbo run dev --filter @cfblog/admin",
     "lint": "turbo run lint",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.30.0",
     "oxfmt": "^0.44.0",
     "oxlint": "^1.59.0",
     "prettier": "^3.7.4",

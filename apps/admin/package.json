@@ -1,5 +1,5 @@
 {
-  "name": "admin",
+  "name": "@cfblog/admin",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -27,6 +27,7 @@
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.9.1",
     "jsdom": "^29.0.1",
+    "naive-ui": "^2.44.1",
     "npm-run-all2": "^8.0.4",
     "typescript": "~6.0.0",
     "vite": "^8.0.3",
