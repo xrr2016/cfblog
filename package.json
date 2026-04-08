@@ -6,6 +6,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "dev:api": "turbo run dev --filter @cfblog/api",
+    "dev:blog": "turbo run dev --filter @cfblog/blog",
     "dev:admin": "turbo run dev --filter @cfblog/admin",
     "lint": "turbo run lint",
     "check-types": "turbo run check-types"
