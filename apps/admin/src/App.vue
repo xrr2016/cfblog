@@ -1,6 +1,17 @@
 <script setup lang="ts">
+import { onMounted } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+
+async function ping() {
+  const res = await fetch("/api/ping");
+  console.log(await res.json());
+}
+
+onMounted(() => {
+  console.log("onMounted");
+  ping();
+});
 </script>
 
 <template>
