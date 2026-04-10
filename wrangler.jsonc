@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cfblog-server",
+  "route": "cfblog.coldstonebly.cn/*",
+  "compatibility_date": "2025-04-18",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "local_cfblog-db",
+      "database_id": "fbf29ff6-42e3-4098-8dc1-2dd86532f296",
+    },
+  ],
+  "env": {
+    "staging": {
+      "main": "apps/server/dist/index.mjs",
+      "vars": {
+        "ENVIRONMENT": "staging",
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "staging-cfblog-db",
+          "database_id": "fbf29ff6-42e3-4098-8dc1-2dd86532f296",
+        },
+      ],
+    },
+    "production": {
+      "vars": {
+        "ENVIRONMENT": "production",
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "prod-cfblog-db",
+          "database_id": "fff01392-b496-433b-9caa-03713166af3d",
+        },
+      ],
+    },
+  },
+}

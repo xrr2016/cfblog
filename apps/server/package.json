@@ -6,7 +6,8 @@
     "build": "tsc",
     "fmt": "oxfmt",
     "lint": "oxlint",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.13",
